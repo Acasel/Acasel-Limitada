@@ -1,0 +1,247 @@
+﻿  body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("https://i.imgur.com/mBmbqle.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+	header {
+  background: url("https://i.imgur.com/HnKmn7o.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  color: var(--blanco);
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+    header h1 {
+      margin: 0;
+	  color: #D8DFE6;
+	  font-family: "Luckiest Guy", cursive;
+	  letter-spacing: 4px;
+	  font-size: 50px;
+    }
+header p {
+color: #D8DFE6;
+font-family: "Roboto Condensed", sans-serif;
+font-size: 30px;
+line-height: 0.2;
+}
+nav {
+  background-color: #E6C200;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin: 0.5rem 1rem;
+}
+
+nav a {
+  color: #090D6E;
+  text-decoration: none;
+  font-weight: bold;
+  transition: opacity 0.3s;
+  font-family: "Anton", sans-serif;
+  font-size: 25px;
+  letter-spacing: 4px;
+}
+
+nav a:hover {
+  opacity: 0.7;
+}
+.container {
+  padding: 20px;
+  max-width: 1100px;
+  margin: auto;
+    }
+.colores {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.color.seleccionado {
+  border: 3px solid #000;
+  transform: scale(1.15);
+}
+
+.color {
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  min-height: 30px;
+  border-radius: 50%;
+  border: 2px solid #555;
+  cursor: pointer;
+  padding: 0;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.color.burdeo { background-color: #590E00; }
+.color.negro { background-color: #000000; }
+.color.blanco { background-color: #ffffff; }
+.color.gris {background-color: #BAB8AF;}
+.color.morado {background-color: #7D0173;}
+.color.azul {background-color: #000052;}
+.color.calipso {background-color: #459FFF;}
+.color.rojo {background-color: #BF2002;}
+
+.color.activo {
+  outline: 3px solid #000;
+}
+.card img {
+  width: 100%;
+  max-width: 220px;  
+  height: 220px;     
+  object-fit: cover; 
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.card {
+  background-image: url("https://i.imgur.com/PfLTFrF.jpeg");
+  background-size: cover;
+  background-position: center;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+  max-width: 380px;
+  min-height: 520px;
+  flex-direction: column;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.card h3 {
+  margin: 5px 0;
+}
+.categories {
+  display: flex;
+  grid-template-columns: repeat(auto-fill, 220px);
+  gap: 30px;
+  justify-content: center;
+}
+
+.info {
+  width: 220px;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+}
+.producto-img {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  background: #f3f3f3;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.info h3 {
+  font-size: 22px;
+  margin: 5px 0;
+  font-family: "Josefin Sans", sans-serif;
+  color: #011C45;
+}
+
+.info p:not(.price) {
+  font-weight: bold;
+  margin: 5px 0 10px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #DBDDFF;
+}
+.card h3 {
+  margin: 10px 0 5px;
+}
+
+.price {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #FFC800;
+}
+.tamano-label {
+  font-family: "Josefin Sans", sans-serif;
+  color: #DBDDFF;
+  font-size: 16px;
+  text-align: left;
+  align-self: flex-start;
+}
+select {
+  width: 100%;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 2px solid #FFC800;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  background-color: #011C45;
+  color: white;
+  cursor: pointer;
+}
+select:focus {
+  outline: none;
+  border-color: #DBDDFF;
+  box-shadow: 0 0 5px #DBDDFF;
+}
+
+.btn {
+  display: inline-block;
+  background: #1f3fbf;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #162f8f;
+}
+
+    .section-title {
+	  color: #DBDDFF;
+      margin: 40px 0 20px;
+      text-align: center;
+	  font-family: "Comforter", cursive;
+	  font-size: 45px;
+	  letter-spacing: 4px;
+    }
+
+    footer {
+      background: #B8C9DB;
+      color: #012445;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+	  border-radius: 30px;
+    }
+	@media (max-width: 600px) {
+  .productos {
+    grid-template-columns: 1fr;
+  }
+
+  .producto {
+    width: 100%;
+  }
+}
