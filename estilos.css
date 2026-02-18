@@ -14,18 +14,17 @@
   background-position: center;
   background-repeat: no-repeat;
   box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-  color: var(--blanco);
   text-align: center;
   padding: 2rem 1rem;
 }
 
     header h1 {
       margin: 0;
-	  color: #D8DFE6;
+	  color: #E6C200;
 	  font-family: "Luckiest Guy", cursive;
 	  letter-spacing: 4px;
 	  font-size: 50px;
-    }
+ }
 header p {
 color: #D8DFE6;
 font-family: "Roboto Condensed", sans-serif;
@@ -38,6 +37,7 @@ nav {
 
 nav ul {
   display: flex;
+  gap: 40px;
   justify-content: center;
   list-style: none;
   flex-wrap: wrap;
@@ -59,6 +59,13 @@ nav a {
 
 nav a:hover {
   opacity: 0.7;
+}
+.texto-destacado {
+  text-shadow: 0 0 20px rgba(255,255,255,2);
+  0 0 35px rgba(224,229,255,2);
+}
+.texto-borde {
+  -webkit-text-stroke: 1px #E0E5FF;
 }
 .container {
   padding: 20px;
@@ -126,7 +133,7 @@ nav a:hover {
   align-items: center;
 }
 .card h3 {
-  margin: 5px 0;
+  margin: 10px 0 5px;
 }
 .categories {
   display: flex;
@@ -169,10 +176,6 @@ nav a:hover {
   font-family: "Josefin Sans", sans-serif;
   color: #DBDDFF;
 }
-.card h3 {
-  margin: 10px 0 5px;
-}
-
 .price {
   font-weight: bold;
   margin-bottom: 10px;
@@ -226,6 +229,7 @@ select:focus {
 	  font-family: "Comforter", cursive;
 	  font-size: 45px;
 	  letter-spacing: 4px;
+	  text-shadow: 0 0 10px rgba(255,255,255,0.9);
     }
 
     footer {
@@ -236,12 +240,34 @@ select:focus {
       margin-top: 40px;
 	  border-radius: 30px;
     }
-	@media (max-width: 600px) {
-  .productos {
-    grid-template-columns: 1fr;
+@media (max-width: 768px) {
+  nav {
+    padding: 10px 0;
   }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  nav ul li a {
+    font-size: 14px;
+  }
+@media (max-width: 768px) {
 
-  .producto {
-    width: 100%;
+  .card {
+    flex-direction: column;
+    align-items: center;
   }
+  .info {
+    width: 95%;
+    max-width: 400px;
+  }
+}
+  .categorias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
 }
